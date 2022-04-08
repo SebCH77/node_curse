@@ -1,0 +1,8 @@
+npm init
+npm init -y
+
+npm install nodemon --save-dev
+npm uninstall nodemon
+npm i colors@1.0.0
+
+npm update //Verificar actualizaciones de paquetes.
