@@ -1,7 +1,14 @@
 const { createFileFunct } = require("./helpers/multiplicar");
 
 console.clear();
-const base = 3;
+
+const [, , arg3 = "base=5"] = process.argv;
+const [, base = 5] = arg3.split("=");
+
+// console.log(base);
+
+// const base = 3;
+
 createFileFunct(base)
   .then((nombreArchivo) => console.log(nombreArchivo, "creado"))
   .catch((err) => console.log(err));
